@@ -1,3 +1,3 @@
 const $ = require("jquery");
 
-$("#mount").html("Webpack, getting started");
+$("#mount").html("Webpack, getting started.");
