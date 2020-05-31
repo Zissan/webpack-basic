@@ -1,10 +1,20 @@
 const path = require("path");
+const TerserPlugin = require("terser-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    port: 9000,
+    compress: true,
   },
   module: {
     rules: [
