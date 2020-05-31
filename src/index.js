@@ -1,3 +1,6 @@
-const $ = require("jquery");
+import React from "react";
+import { render } from "react-dom";
 
-$("#mount").html("Webpack, getting started.");
+const Greeting = () => <h1>Webpack, getting started using React</h1>;
+
+render(<Greeting />, document.getElementById("mount"));
