@@ -13,3 +13,9 @@ body {
 h1 {
   color: #dedede;
 }
+
+.image {
+  background: url(images/black.png) repeat;
+  width: 300px;
+  height: 300px;
+}
